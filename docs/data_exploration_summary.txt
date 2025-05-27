@@ -1,0 +1,6 @@
+Data Exploration Summary - 2025-05-27 17:25:30.828731
+==================================================
+Total Records: 1,067,371
+Total Columns: 8
+Duplicates: 34,335
+Memory Usage: 316.6 MB
