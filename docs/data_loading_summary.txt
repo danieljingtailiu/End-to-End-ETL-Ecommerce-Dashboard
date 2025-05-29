@@ -1,0 +1,5 @@
+Data Loading Summary - 2025-05-28 20:16:59.447075
+==================================================
+Raw records: 1,067,371
+Clean records: 805,501
+Success: True
