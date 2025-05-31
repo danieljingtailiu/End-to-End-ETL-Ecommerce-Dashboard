@@ -1,0 +1,3 @@
+IsActive,Status,CustomerCount,AvgLifetimeValue
+1,Active (Last 365 Days),4272,"$3,772.70"
+0,Inactive (>365 Days),1601,$781.24

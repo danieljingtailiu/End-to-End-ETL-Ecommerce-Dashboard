@@ -1,0 +1,5 @@
+CustomerSegment,CustomerCount,AvgLifetimeValue,TotalRevenue,AvgOrders
+VIP,2738,"$5,860.40","$16,045,768.55",11.0
+Premium,1096,$729.03,"$799,016.45",2.0
+Regular,1831,$278.60,"$510,117.38",1.0
+New,208,$61.76,"$12,846.48",1.0

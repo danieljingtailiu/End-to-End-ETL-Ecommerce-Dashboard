@@ -1,0 +1,11 @@
+CustomerID,Country,TotalSpent,TotalOrders,AvgOrderValue,CustomerSegment
+13005.0,United Kingdom,$999.68,4,$249.92,Premium
+12413.0,France,$999.45,4,$249.86,Premium
+17205.0,United Kingdom,$999.35,3,$333.12,Premium
+16863.0,United Kingdom,$998.52,3,$332.84,Premium
+17631.0,United Kingdom,$998.49,7,$142.64,Premium
+18006.0,United Kingdom,$997.86,4,$249.47,Premium
+12722.0,France,$997.63,4,$249.41,Premium
+13965.0,United Kingdom,$996.61,3,$332.20,Premium
+17883.0,United Kingdom,$995.85,7,$142.26,Premium
+16699.0,United Kingdom,$994.60,7,$142.09,Premium
