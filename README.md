@@ -51,14 +51,14 @@ Below are key visual outputs from the project, demonstrating the progression fro
 
 Before beginning transformations, an in-depth data exploration was conducted using Python. This provided critical insights into data quality issues such as missing values, data type inconsistencies, and outlier distributions, which were then addressed in the cleaning phase.
 
-![Initial Data Exploration Plots showing missing values, data types, records over time, and quantity distribution](images/data_exploration.jpg)
+![Initial Data Exploration Plots showing missing values, data types, records over time, and quantity distribution](images/data_exploration.png)
 *Visualizations like missing value heatmaps and distribution plots were instrumental in understanding the dataset's characteristics and informing the data cleaning strategy.*
 
 ### 2. Executive Overview Dashboard
 
 This dashboard serves as the central hub for leadership, providing a high-level summary of critical business performance indicators.
 
-![Executive Overview Dashboard displaying key KPIs, revenue per quarter, category distribution, and product summary](images/Executive%20Overview%20Dashboard.jpg)
+![Executive Overview Dashboard displaying key KPIs, revenue per quarter, category distribution, and product summary](images/Executive%20Overview%20Dashboard.png)
 *It presents key metrics such as Total Revenue, Total Products Sold, Total Customers, and Average Order Value, alongside visualizations for revenue trends and top product performance.*
 
 ### 3. Customer Analysis Dashboard
@@ -72,7 +72,7 @@ Focused on understanding and segmenting the customer base, this dashboard provid
 
 Designed for operational teams, this dashboard offers detailed sales performance metrics by country and product category, aiding in strategic adjustments and identifying areas for improvement.
 
-![Operational Dashboard showing revenue comparison by country, low performer categories, and revenue vs quantity trend analysis](images/Operational%20Dashboard.jpg)
+![Operational Dashboard showing revenue comparison by country, low performer categories, and revenue vs quantity trend analysis](images/Operational%20Dashboard.png)
 *Features include a year-over-year revenue comparison by country, identification of low-performing product categories, and a monthly trend analysis of total sales and quantity sold.*
 
 ## ⚙️ How to Set Up and Run the Project
@@ -132,7 +132,7 @@ To set up and run this project locally, follow these steps:
     * Ensure the data source settings within Power BI are configured to connect to your local SQL Server instance (typically `localhost` or `.\SQLEXPRESS`) using Windows Authentication.
 
 ## 📂 Project Structure
-ecommerce-business-intelligence/
+```ecommerce-business-intelligence/
 ├── data/
 │   ├── raw/                 # Contains the raw downloaded datasets (e.g., ecommerce_data.csv)
 │   └── processed/           # (Optional) Directory for cleaned/intermediate datasets if used in Python
@@ -146,7 +146,7 @@ ecommerce-business-intelligence/
 ├── powerbi/                 # Stores Power BI Desktop files (.pbix) and connection guides
 ├── images/                  # Contains screenshots of dashboards and data exploration visuals
 ├── docs/                    # Comprehensive project documentation (e.g., project_overview.md, technical_architecture.md)
-└── requirements.txt         # Lists all Python package dependencies for easy installation
+└── requirements.txt         # Lists all Python package dependencies for easy installation```
 
 ## ✍️ Author
 
