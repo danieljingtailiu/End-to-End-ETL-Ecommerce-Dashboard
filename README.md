@@ -7,11 +7,11 @@ This project delivers a comprehensive Business Intelligence solution for an e-co
 The core objective is to enable data-driven decision-making by providing a 360-degree view of business performance, customer behavior, and product trends. This solution showcases a complete BI lifecycle, from data ingestion and cleaning to advanced analytics and visualization.
 
 **Key Achievements:**
-* **Processed over 540,000 transaction records:** Demonstrated capability in handling substantial datasets while ensuring data quality and integrity.
-* **Designed & Implemented a Star Schema Data Warehouse:** Created an optimized relational database schema for efficient data retrieval and analytical querying.
-* **Developed a Robust ETL Pipeline:** Automated the Extract, Transform, and Load processes, ensuring data accuracy and timeliness.
-* **Created Comprehensive Power BI Dashboards:** Delivered a suite of interactive dashboards tailored for executive, operational, customer, and product intelligence.
-* **Applied Advanced DAX & Power BI Features:** Utilized sophisticated analytical calculations and enhanced user experience through drill-throughs, bookmarks, and dynamic elements.
+* **Built 3 Interactive Dashboard Suites:** Executive Overview, Customer Analytics, and Operational Intelligence
+* **Implemented Advanced Customer Segmentation:** 4-tier classification (VIP: 46.62%, Regular: 31.18%, Premium: 18.66%, New: 3.54%)
+* **Developed Geographic Performance Tracking:** 10+ country analysis with YoY growth metrics
+* **Created Dynamic Product Performance Matrix:** Revenue vs. Quantity analysis identifying top performers
+* **Applied Sophisticated DAX Calculations:** Customer lifetime value, acquisition trends, and performance categorization
 
 ## 🛠️ Technical Stack
 
@@ -75,6 +75,61 @@ Designed for operational teams, this dashboard offers detailed sales performance
 ![Operational Dashboard showing revenue comparison by country, low performer categories, and revenue vs quantity trend analysis](images/Operational%20Dashboard.png)
 *Features include a year-over-year revenue comparison by country, identification of low-performing product categories, and a monthly trend analysis of total sales and quantity sold.*
 
+## 🎯 Dashboard Features & Capabilities
+
+### Executive Overview Dashboard
+- **KPI Cards:** Total Revenue ($17.37M), Products Sold (10M), Active Customers (5,873), Avg Order Value ($470)
+- **Quarterly Revenue Trends:** Visual identification of seasonal patterns and growth trajectories
+- **Category Distribution:** 5-tier product portfolio analysis with percentage breakdowns
+- **Product Performance Ranking:** Top performers with revenue and quantity metrics
+
+### Customer Analytics Dashboard  
+- **Customer Portfolio Segmentation:** Visual breakdown of customer tiers with percentage distribution
+- **Acquisition Trend Analysis:** Monthly new customer tracking showing seasonal patterns
+- **Top Customer Revenue Analysis:** Individual customer performance with dual-axis visualization
+- **Multi-dimensional Filtering:** Year, Country, Customer Segment, and Category slicers
+
+### Operational Dashboard
+- **Geographic Performance Matrix:** Country-wise revenue with YoY growth percentages
+- **Low Performer Identification:** Category-wise revenue analysis highlighting improvement opportunities  
+- **Revenue vs. Quantity Scatter Analysis:** Product positioning and performance correlation
+- **Monthly Trend Analysis:** Dual-metric tracking of sales and quantity patterns
+
+## 🔗 Data Model & Relationships
+
+The Power BI solution implements a optimized star schema data model ensuring efficient query performance and intuitive user experience.
+
+![Power BI Data Model Relationships showing star schema with central FactSales table connected to dimension tables](images/powerbi%20data%20model.png)
+
+### Data Model Architecture:
+- **Central Fact Table:** `dw FactSales` serves as the transaction hub storing all sales metrics
+- **Dimension Tables:** Four key dimensions provide context and filtering capabilities:
+  - `dw DimDate` - Comprehensive date attributes with calendar hierarchies
+  - `dw DimCustomer` - Customer profiles with calculated lifetime metrics
+  - `dw DimProduct` - Product catalog with performance categorization
+  - `dw vw_ProductPerformance` - Pre-aggregated product metrics for enhanced performance
+
+### Business Views Integration:
+- **`dw vw_SalesSummary`** - Pre-joined sales data optimized for dashboard consumption
+- **`dw vw_CustomerAnalysis`** - Customer-centric metrics with segmentation logic
+- **Relationship Integrity:** All relationships maintain referential integrity with proper cardinality (1-to-many from dimensions to facts)
+
+### Performance Optimizations:
+- **Star schema design** minimizes joins and maximizes query performance
+- **Calculated columns** in dimensions reduce computation overhead in visuals
+- **Aggregated views** provide pre-computed metrics for faster dashboard loading
+- **Proper indexing** on relationship keys ensures efficient data retrieval
+
+## 🛠️ Advanced Power BI Techniques Implemented
+
+- **Custom DAX Measures:** Complex calculations for customer segmentation and performance metrics
+- **Dynamic Segmentation:** 4-tier customer classification based on purchasing behavior  
+- **Cross-Dashboard Navigation:** Seamless tab-based navigation system
+- **Advanced Visualizations:** Scatter plots, dual-axis charts, and custom KPI cards
+- **Interactive Filtering:** Multi-dimensional slicers with cross-visual filtering
+- **Performance Optimization:** Efficient data model design supporting real-time dashboard interactions
+- **Conditional Formatting:** Color-coded performance indicators and trend visualization
+
 ## ⚙️ How to Set Up and Run the Project
 
 To set up and run this project locally, follow these steps:
@@ -88,12 +143,13 @@ To set up and run this project locally, follow these steps:
 * **Visual Studio Code:** Recommended for code editing and project management.
 
 ### Setup Steps:
+**Estimated Time:** 30-45 minutes
 
 1.  **Clone the Repository:**
     Open your terminal or command prompt and run:
     ```bash
-    git clone [https://github.com/YOUR-USERNAME/ecommerce-business-intelligence.git](https://github.com/YOUR-USERNAME/ecommerce-business-intelligence.git)
-    cd ecommerce-business-intelligence
+    git clone https://github.com/danieljingtailiu/End-to-End-ETL-Ecommerce-Dashboard.git
+    cd End-to-End-ETL-Ecommerce-Dashboard
     ```
 
 2.  **Set Up Python Environment & Install Dependencies:**
@@ -146,7 +202,8 @@ To set up and run this project locally, follow these steps:
 ├── powerbi/                 # Stores Power BI Desktop files (.pbix) and connection guides
 ├── images/                  # Contains screenshots of dashboards and data exploration visuals
 ├── docs/                    # Comprehensive project documentation (e.g., project_overview.md, technical_architecture.md)
-└── requirements.txt         # Lists all Python package dependencies for easy installation```
+└── requirements.txt         # Lists all Python package dependencies for easy installation
+```
 
 ## ✍️ Author
 
