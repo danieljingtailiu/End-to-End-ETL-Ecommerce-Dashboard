@@ -84,7 +84,7 @@ Designed for operational teams, this dashboard offers detailed sales performance
 - **Product Performance Ranking:** Top performers with revenue and quantity metrics
 
 ### Customer Analytics Dashboard  
-- **Customer Portfolio Segmentation:** Visual breakdown of customer tiers with percentage distribution
+- **Customer Portfolio Segmentation:** Visual breakdown of customer tiers with percentage distribution 
 - **Acquisition Trend Analysis:** Monthly new customer tracking showing seasonal patterns
 - **Top Customer Revenue Analysis:** Individual customer performance with dual-axis visualization
 - **Multi-dimensional Filtering:** Year, Country, Customer Segment, and Category slicers
